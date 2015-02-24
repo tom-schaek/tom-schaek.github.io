@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 
             //example: compiles sass -> autoprefix css -> trigger notification
             sass: {
-                files: ['../scss/**/*.{scss,sass}'],
+                files: ['../scss/*.{scss,sass}'],
                 tasks: [
                     'sass:dev',
                     //'autoprefixer:dev',
@@ -71,10 +71,9 @@ module.exports = function (grunt) {
                     imagePath: '../images/dist'
                 },
 
-                //Compiles the scss/main.scss to -> tmp/main.css
+                //Compiles the scss/style.scss to -> tmp/style.css
                 files: {
-                    '../css/main.css': '../scss/main.scss',
-                    '../css/responsive-drupal-debug.css': '../scss/**/responsive-drupal-debug.scss'
+                    '../css/style.css': '../scss/style.scss'
                 }
             },
 
